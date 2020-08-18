@@ -1,0 +1,21 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 m-auto">
+      <div class="card">
+        <div class="card-header bg-primary text-white text-center">
+          <h3>Angular Stop Watch</h3>
+        </div>
+        <div class="card-body bg-light text-white text-center">
+          <h3 class="display-2">
+            <span>{{leadingZero(minutes)}}</span> :
+            <span>{{leadingZero(seconds)}}</span> :
+            <span>{{leadingZero(milliSeconds)}}</span>
+          </h3>
+          <button class="btn btn-success" (click)="startCounter()">Start</button>
+          <button class="btn btn-danger" (click)="stopCounter()">Stop</button>
+          <button class="btn btn-warning" (click)="resetCounter()">Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
